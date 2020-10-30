@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<link rel="shortcut icon" type="image/png" href="image/favicon.ico" />
+  <meta charset="UTF-8">
+   <title>online classes</title>
+    
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600'><link rel="stylesheet" href="./style2.css">
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+<div class="login-wrap">
+ 
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign Up</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">class info</label>
+        
+       
+		<div class="login-form">
+			<div class="sign-in-htm">
+                <form name="submit-to-google-sheet" id="form" action="/" method="GET">
+                     <div id="error"></div>
+                    <div class="group">
+  <input id="name" type="text" class="input" name="email"  placeholder="Full Name" required>
+                        
+                    </div>
+                     <div class="group">
+  <input id="email" type="text" class="input" name="firstName"  placeholder="Email Adress" required>
+                    </div>
+                     <div class="group">
+  <input id="phone" type="text" class="input" name="lastName" placeholder="Phone Number" required>
+                    </div>
+                         <a href="thankyou.html">
+<div class="group">
+		
+    <button class="button" type="submit"  >download agenda</button>
+                             </div></a>
+                    <input id="checkbox" type="checkbox" required>
+                      <button class="cta-button" href="test.html" >
+   <a href="privacy/privacy.html">Terms and Conditions</a>
+   </button>
+   
+</form>
+	
+                <div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+				
+				</div>
+				    <label id="tab-2" lass="sign-in"> <h>inicio de clasess <br>
+                        10/08/2020 - 16-08-2020
+                        
+</h></label>		 <br>   <label id="tab-2" lass="sign-in"> <h>de 5:00 pm - 6:00pm 
+tiempo central<br><br>
+                        
+</h></label>
+                
+                   <p>la clase durará 6 días a partir del lunes hasta el sábado en esta clase aprenderá cómo construir su sitio web comercial y ejecutarlo todo desde 0 <a href="https://m.me/1onlineclasses">press link</a></p>
+
+				<div class="hr"></div>
+				<div class="foot-lnk">
+                    
+				<!-- partial -->
+    <!-- partial:index.partial.html -->
+   
+
+        
+<!--<ul id="countdown">
+  <li id="days">
+    <div class="number">00</div>
+    <div class="label">Days</div>
+  </li>
+  <li id="hours">
+    <div class="number">00</div>
+    <div class="label">Hours</div>
+  </li>
+  <li id="minutes">
+    <div class="number">00</div>
+    <div class="label">Minutes</div>
+  </li>
+  <li id="seconds">
+    <div class="number">00</div>
+    <div class="label">Seconds</div>
+  </li>
+</ul> count down code blancked outs partial -->
+				</div>
+			</div>
+			<div class="sign-up-htm">
+				
+					<label for="check"><span class="icon"></span> 
+en esta clase aprenderá cómo construir su sitio web comercial y ejecutarlo todo desde 0 BENEFICIOS
+<br>
+■ 30 horas Presenciales<br>
+■ Acceso a plataforma Web<br>
+■ Diploma de la STPS<br>
+■ Instructor certificadov
+■ Hosting gratis<br>
+<br>
+TEMARIO<br>
+<br>
+■ Qué es HTML, HTML5 y CSS<br>
+■ Creación de Tablas, CellPading<br>
+■ Doctype y Listas<br>
+■ Creación de Tablas y listas en CSS<br>
+■ CSS Externo<br>
+
+■ Formularios con menú, botones y checkbox<br>
+■ Introducción a JavaScript<br>
+■ Variables y Arreglos<br>
+■ Sentencias de programación<br>
+■ Ciclos de Programación<br>
+
+■ Funciones en JavaScript<br>
+■ Métodos y Propiedades<br>
+■ Objetos y Eventos<br>
+■ Introducción a PHP y MySql<br>
+■ Variables y Arreglos<br>
+
+<div class="group">
+                        </div></label>
+				<div class="hr"></div>
+				
+			</div>
+		</div>
+        
+	</div>
+      
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+    <script>
+    
+    /* --------------------------
+ * GLOBAL VARS
+ * -------------------------- */
+// The date you want to count down to
+var targetDate = new Date("2020/08/10 12:00:00");   
+
+// Other date related variables
+var days;
+var hrs;
+var min;
+var sec;
+
+/* --------------------------
+ * ON DOCUMENT LOAD
+ * -------------------------- */
+$(function() {
+   // Calculate time until launch date
+   timeToLaunch();
+  // Transition the current countdown from 0 
+  numberTransition('#days .number', days, 1000, 'easeOutQuad');
+  numberTransition('#hours .number', hrs, 1000, 'easeOutQuad');
+  numberTransition('#minutes .number', min, 1000, 'easeOutQuad');
+  numberTransition('#seconds .number', sec, 1000, 'easeOutQuad');
+  // Begin Countdown
+  setTimeout(countDownTimer,1001);
+});
+
+/* --------------------------
+ * FIGURE OUT THE AMOUNT OF 
+   TIME LEFT BEFORE LAUNCH
+ * -------------------------- */
+function timeToLaunch(){
+    // Get the current date
+    var currentDate = new Date();
+
+    // Find the difference between dates
+    var diff = (currentDate - targetDate)/1000;
+    var diff = Math.abs(Math.floor(diff));  
+
+    // Check number of days until target
+    days = Math.floor(diff/(24*60*60));
+    sec = diff - days * 24*60*60;
+
+    // Check number of hours until target
+    hrs = Math.floor(sec/(60*60));
+    sec = sec - hrs * 60*60;
+
+    // Check number of minutes until target
+    min = Math.floor(sec/(60));
+    sec = sec - min * 60;
+}
+
+/* --------------------------
+ * DISPLAY THE CURRENT 
+   COUNT TO LAUNCH
+ * -------------------------- */
+function countDownTimer(){ 
+    
+    // Figure out the time to launch
+    timeToLaunch();
+    
+    // Write to countdown component
+    $( "#days .number" ).text(days);
+    $( "#hours .number" ).text(hrs);
+    $( "#minutes .number" ).text(min);
+    $( "#seconds .number" ).text(sec);
+    
+    // Repeat the check every second
+    setTimeout(countDownTimer,1000);
+}
+
+/* --------------------------
+ * TRANSITION NUMBERS FROM 0
+   TO CURRENT TIME UNTIL LAUNCH
+ * -------------------------- */
+function numberTransition(id, endPoint, transitionDuration, transitionEase){
+  // Transition numbers from 0 to the final number
+  $({numberCount: $(id).text()}).animate({numberCount: endPoint}, {
+      duration: transitionDuration,
+      easing:transitionEase,
+      step: function() {
+        $(id).text(Math.floor(this.numberCount));
+      },
+      complete: function() {
+        $(id).text(this.numberCount);
+      }
+   }); 
+};
+    </script>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzeKv6TxG724g2CbB2PQCegOTrszsFb6UTuIlhvvtD4_RbKo4w/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+      
+   
+   window.open('thankyou.html');
+
+      
+      
+      
+  })
+</script>
+    
+<!-- <div id='chat-box'>
+    
+<div id='chat-top'>Need HELP? <span id='chat-top-right'><svg id='close-box' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z" fill='#fff'/></svg></span><div class='clear'></div></div>partial:index.partial.html
+
+<div id='chat-msg'><p>ay if this date dont work for you but you do want to take classes send me a message for private classes or press the link<a href="privacy/privacy.html">link to the form</a> </p>
+<div id='chat-form'>
+<div class='chat-in'>
+<input type='text' id='whats-in' Placeholder='Send Your Message...'/></div><div id='send-btn'><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 48 48"><path d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z" fill='rgb(18, 140, 126)'/></svg></div></div>
+</div>
+</div>
+<div id='whats-chat'>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1" width="35" height="35" viewBox="0 0 90 90"><path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"/></svg>
+</div>-->
+
+   
+<style>
+  body{width:100%}
+*{margin:0px;padding:0px;box-sizing:border-box;}
+#whats-chat{position:fixed;right:3%;bottom:10%;height:auto;width:auto;background:#25D366;padding:12.5px;border-radius:50px;}
+#whats-chat:hover{cursor:pointer;box-shadow:2px 2px 15px #ccc;bottom:11%;}
+        
+  #whats-chat2{position:fixed;right:3%;bottom:20%;height:auto;width:auto;background:blue:;padding:12.5px;border-radius:50px;}
+#whats-chat2:hover{cursor:pointer;box-shadow:2px 2px 15px #ccc;bottom:11%;}  
+
+/*===============================*/
+#chat-box{position:fixed;right:-500px;bottom:18%;width:250px;height:200px;transition:all .5s;}
+#chat-top{width:100%;line-height:2;background:rgb(18, 140, 126);color:white;text-align:center;border-radius:5px 5px 0 0;padding:0 10px;}
+#chat-msg{background:#ece5dd;padding:10px;border-radius:0 0 5px 5px;box-shadow:0 0 25px -10px #999;}
+#chat-msg p{font-size:14px;padding:5px;background:white;border-radius:0 50px 50px 50px;margin-bottom:10px;}
+#chat-form{display:flex;}
+.chat-in{width:80%;}
+#chat-form input{border-radius:5px 0 5px 5px;border:none;outline:none;font-size:14px;padding:5px;line-height:2;}
+#send-btn{width:20%;padding: 0 5px;}
+#chat-top-right{float:right;padding:5px 0;}
+#chat-box:after{content:'';
+    position: absolute;
+    top:58%;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  
+  border-right:25px solid #ece5dd;}
+.right{float:right}
+.clear{clear:both}
+</style>
+<script>
+document.getElementById('whats-chat').addEventListener("mouseover", showchatbox);
+document.getElementById('chat-top-right').addEventListener("click", closechatbox);
+document.getElementById('send-btn').addEventListener("click", sendmsg);
+window.addEventListener("load", showchatboxtime);
+function showchatbox(){
+document.getElementById('chat-box').style.right='8%'
+}
+function closechatbox(){
+document.getElementById('chat-box').style.right='-500px'
+
+
+}
+function showchatboxtime(){
+setTimeout(launchbox,500)
+}
+function launchbox(){
+document.getElementById('chat-box').style.right='8%'
+
+}
+function sendmsg(){
+var msg = document.getElementById('whats-in').value;
+var relmsg = msg.replace(/ /g,"%20");
+ window.open('https://api.whatsapp.com/send?phone=523322147756&text='+relmsg,'_blank');
+
+}
+</script>
+<!-- partial -->
+    <!-- form vaildation -->
+    <script>
+    
+    
+    const name = document.getElementById('name')
+const email = document.getElementById('email')
+const phone = document.getElementById('phone')
+const checkbox = document.getElementById('checkbox')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (name.value === '' || name.value == null) {
+    messages.push('Name is required')
+  }
+  if (email.value === '' || email.value == null) {
+    messages.push('Name is required')
+  }
+    
+   if (phone.value === '' || phone.value == null) {
+    messages.push('Name is required')
+  }
+     if (checkbox.value === '' || checkbox.value == null) {
+    messages.push('Name is required')
+  }
+    
+    
+})
+    
+    
+    
+    </script>
+</body>
+</html>
