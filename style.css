@@ -49,3 +49,11 @@ body {
     border: 15px solid orange;
     padding: 50px;
 }
+#topbar__forward {
+      font-size: 400%;
+  font-weight: bold;
+  width: auto;
+     color: red;
+      text-align: center
+    
+}
