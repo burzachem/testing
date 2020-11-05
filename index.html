@@ -2,7 +2,20 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Text animations</title>
+ 	<title>onlineclasses</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="_csrf" content="IwC3meotu_W302c8Gs0C60_2J5fbKA32_glbKnbDKUc" />
+	
+			<meta name="description" content="onlineclasses1 makes it surprisingly easy to create a high-quality website, blog or online store. Over 40 million people use Weebly to bring their unique ideas to life.">
+	
+	<meta property="og:title" content="onlineclasses1 is the easiest way to create a website, store or blog">
+	<meta property="og:type" content="company">
+	<meta property="og:site_name" content="onlineclasses1.com">
+	<meta property="og:image" content="https://www.logopik.com/wp-content/uploads/edd/2018/10/Online-Education-Logo-Vector.png">
+    
+    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -17,18 +30,7 @@
 <!DOCTYPE html>
 <html id="landing-page-home" lang="en">
 <head>
-		<title>onlineclasses</title>
 	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="_csrf" content="IwC3meotu_W302c8Gs0C60_2J5fbKA32_glbKnbDKUc" />
-	
-			<meta name="description" content="onlineclasses1 makes it surprisingly easy to create a high-quality website, blog or online store. Over 40 million people use Weebly to bring their unique ideas to life.">
-	
-	<meta property="og:title" content="onlineclasses1 is the easiest way to create a website, store or blog">
-	<meta property="og:type" content="company">
-	<meta property="og:site_name" content="onlineclasses1.com">
-	<meta property="og:image" content="https://www.logopik.com/wp-content/uploads/edd/2018/10/Online-Education-Logo-Vector.png">
 	
 		
 	<script src="https://use.typekit.net/cxj0npn.js"></script>
@@ -37,7 +39,7 @@
 	<!-- Stylesheets -->
 	<link href="testing.css" rel="stylesheet" type="text/css">
 
-	<link href="test2.css" rel="stylesheet" type="text/css">
+
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>	<script type="text/javascript" src="//cdn2.editmysite.com/js/lang/en/utl.js?buildTime=1518741919&amp;"></script>
@@ -86,143 +88,6 @@ _W.setup_model_rpc({"rpc_namespace":"_W.Onboarding.RPC","model_namespace":"_W.On
 		}
 	</script>
 
-
-
-	<script>
-		// Set DUID and PV hit
-		(function () {
-			var duid;
-			var domainCookieKey = 'srv_domainuserid'; // Used in tracking.js and EventTracker, must match.
-	
-			// Visibility/unload
-			var imageSent = false;
-	
-			handleSetup();
-	
-			// Some browsers prefetch pages and execute their JS, so this added event fires only when a tab is the "selected"
-			// and visible tab in the browser, locking out false page-hits from prefetches.
-			document.addEventListener("visibilitychange", beetVisible);
-			beetVisible();
-	
-			function handleSetup() {
-				duid = getOrGenerateDomainUserID();
-				setDomainUserID(duid);
-			}
-	
-			function getOrGenerateDomainUserID() {
-				var id = getExistingDUID();
-	
-				if (!id) {
-					id = generateDUID();
-				}
-	
-				return id;
-			}
-	
-			function getExistingDUID() {
-				return getCookie(domainCookieKey);
-			}
-	
-			// Grafted from http://stackoverflow.com/a/8809472/374658
-			function generateDUID() {
-				var d = new Date().getTime();
-				if(window.performance && typeof window.performance.now === "function"){
-					d += performance.now();; //use high-precision timer if available
-				}
-				var uuid = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-					var r = (d + Math.random()*16)%16 | 0;
-					d = Math.floor(d/16);
-					return (c=='x' ? r : (r&0x3|0x8)).toString(16);
-				});
-				return uuid;
-			};
-	
-			// Grafted from http://stackoverflow.com/a/25490531/374658
-			function getCookie(key) {
-				var b = document.cookie.match('(^|;)\\s*' + key + '\\s*=\\s*([^;]+)');
-				return b ? b.pop() : null;
-			}
-	
-			function setDomainUserID(duid) {
-				setCookie(domainCookieKey, duid);
-			}
-	
-			function setCookie(key, value) {
-				var CookieDate = new Date;
-				CookieDate.setFullYear(CookieDate.getFullYear() + 10); // 10yrs
-				document.cookie = key + '=' + value + '; expires=' + CookieDate.toGMTString( ) + ';path=/;domain=classes1.com;';
-			}
-	
-			function beetVisible() {
-				if (!imageSent && !document.hidden) {
-					imageSent = true;
-					sendBeet('load');
-				}
-			}
-	
-			function sendBeet(type) {
-				var downloadingImage = new Image();
-				var params = '?type=' + type
-						+ '&ref=' + encodeURIComponent(document.referrer) // Encoded to cover possible params.
-						+ '&duid=' + duid
-						+ '&ts=' + new Date().getTime().toString() + Math.floor(Math.random()*10000000000); // Random val to ensure that it never gets cached
-	
-				downloadingImage.src = "/beet" + params; // Will start downloading immediately in the background.
-			}
-		}());
-	</script>
-
-
-<script type="text/javascript">
-	// We always start this script as debug
-	var isDebugMode = true;
-
-	// This cookie is used when we are in the staging automated tests
-	var isAutomationUser = (document.cookie.indexOf('force-automated-segment') != -1);
-	// as an extra safety measure, only declare the GTM info if W_DEBUG is OFF.
-	if (!window.W_DEBUG && !isAutomationUser) {
-		isDebugMode = false;
-	}
-
-	// This function will add the GTM Script to the page asynchronously
-	// and force it to not be cached
-	(function(elementName) {
-		var firstElement = document.getElementsByTagName(elementName)[0];
-		var cacheBuster = Date.now();
-		var script = document.createElement(elementName);
-
-		script.async = true;
-		// Added the "internal" parameter here so we know if the pageview is
-		// an internal page or an external page. This should happen on other
-		// internal pages like all of the UC pages.
-		script.src = '/tracking/gtmscript.js?internal=false&cb=' + cacheBuster;
-
-		firstElement.parentNode.insertBefore(script, firstElement);
-	})('script');
-
-	// The above GTM script is added asynchronously so it is not useable until
-	// the window load event (document load does not wait for async scripts).
-	window.addEventListener('load', function() {
-		// Are the variables loaded, which are required to track an oauth account access event.
-		var canTrackEvent = window._W && window.Aragorn && window.Aragorn.trackAccountAccessEvent;
-		// Is this a commerce 3 onboarding
-		var canTrackEventCommerce = canTrackEvent && window._W.onboardingBootstrap;
-
-		if (canTrackEvent && window._W.OauthSignupSource) {
-			// Standard Oauth Signup
-			window.Aragorn.trackAccountAccessEvent('account-sign-up', window._W.OauthSignupSource, 'success');
-		} else if (canTrackEvent && window._W.OauthLoginSource) {
-			// Standard Oauth Login
-			window.Aragorn.trackAccountAccessEvent('account-login', window._W.OauthLoginSource, 'success');
-		} else if (canTrackEventCommerce && window._W.onboardingBootstrap.oauthSignupSource) {
-			// commerce 3 Oauth Signup
-			window.Aragorn.trackAccountAccessEvent('account-sign-up', window._W.onboardingBootstrap.oauthSignupSource, 'success');
-		} else if (canTrackEventCommerce && window._W.onboardingBootstrap.oauthLoginSource) {
-			// commerce 3 Oauth Login
-			window.Aragorn.trackAccountAccessEvent('account-login', window._W.onboardingBootstrap.oauthLoginSource, 'success');
-		}
-	});
-</script>
 
 </head>
 <body>
