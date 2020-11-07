@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    
-        <!-- jQuery -->
+      <!-- jQuery -->
     <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- jQueryUI -->
     <script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" charset="utf-8"></script>
@@ -22,12 +21,12 @@
 html, body {
   height: 100%;
 }
-section {
+#section01 {
   position: relative;
   width: 100%;
   height: 100%;
 }
-section::after {
+#section01::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -37,7 +36,7 @@ section::after {
   background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
-section h1 {
+section h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,50 +50,8 @@ section h1 {
 }
 
 #section01 { background: url(https://picsum.photos/1200/800?image=575) center center / cover no-repeat;}
-#section02 { background: url(https://picsum.photos/1200/800?image=1016) center center / cover no-repeat;}
-#section03 { background: url(https://picsum.photos/1200/800?image=869) center center / cover no-repeat;}
-#section04 { background: url(https://picsum.photos/1200/800?image=506) center center / cover no-repeat;}
-#section05 { background: url(https://picsum.photos/1200/800?image=1037) center center / cover no-repeat;}
-#section06 { background: url(https://picsum.photos/1200/800?image=901) center center / cover no-repeat;}
-#section07 { background: url(https://picsum.photos/1200/800?image=675) center center / cover no-repeat;}
-#section08 { background: url(https://picsum.photos/1200/800?image=1050) center center / cover no-repeat;}
-#section09 { background: url(https://picsum.photos/1200/800?image=902) center center / cover no-repeat;}
-#section10 { background: url(https://picsum.photos/1200/800?image=516) center center / cover no-repeat;}
 
-#thanks {
-  background-color: #fff;
-}
-#thanks::after {
-  content: none;
-}
-#thanks div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-#thanks h2 {
-  margin-bottom: 60px;
-  color: #333;
-  font : normal 300 64px/1 'Josefin Sans', sans-serif;
-  text-align: center;
-  white-space: nowrap;
-}
-#thanks p {
-  color: #333;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-}
-#thanks p a {
-  color: #333;
-  text-decoration: none;
-  transition: color .3s;
-}
-#thanks p a:hover {
-  color: #888;
-}
+
 .demo a {
   position: absolute;
   bottom: 20px;
@@ -134,441 +91,12 @@ section h1 {
 
 
 
-#section02 a {
-  padding-top: 60px;
-}
-#section02 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section02 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
 
 
 
-#section03 a {
-  padding-top: 60px;
-}
-#section03 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section03 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-#section03 a span::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  content: '';
-  width: 44px;
-  height: 44px;
-  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
-  border-radius: 100%;
-  opacity: 0;
-  -webkit-animation: sdb03 3s infinite;
-  animation: sdb03 3s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb03 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 
-
-#section04 a {
-  padding-top: 60px;
-}
-#section04 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb04 2s infinite;
-  animation: sdb04 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb04 {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-}
-@keyframes sdb04 {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-}
-
-
-
-#section05 a {
-  padding-top: 70px;
-}
-#section05 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb05 1.5s infinite;
-  animation: sdb05 1.5s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb05 {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-@keyframes sdb05 {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-
-
-
-#section06 a {
-  padding-top: 70px;
-}
-#section06 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-  -webkit-animation: sdb06 1.5s infinite;
-  animation: sdb06 1.5s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb06 {
-  0% {
-    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-@keyframes sdb06 {
-  0% {
-    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-    opacity: 0;
-  }
-}
-
-
-
-#section07 a {
-  padding-top: 80px;
-}
-#section07 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-#section07 a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#section07 a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
-}
-#section07 a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
-
-#section08 a {
-  padding-top: 60px;
-}
-#section08 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-#section08 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-
-
-
-#section09 a {
-  padding-top: 80px;
-}
-#section09 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-#section09 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section09 a span::after {
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  width: 18px;
-  height: 18px;
-  content: '';
-  margin-left: -9px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-
-
-
-#section10 a {
-  padding-top: 60px;
-}
-#section10 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-#section10 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-    </style>
+    </style> 
   <meta charset="UTF-8">
  	<title>onlineclasses</title>
 	
@@ -591,19 +119,16 @@ section h1 {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section id="section01" class="demo">
-  <h1>onlineclasess1</h1>
-  <a href="#section02"><span></span>Scroll</a>
+ <section id="section01" class="demo">
+  <h3>onlineclasses1.com</h3>
+
 </section>
 
-    <script>
-    $(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
-    </script>
+  
+
+    
+    
+    
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
@@ -677,70 +202,18 @@ _W.setup_model_rpc({"rpc_namespace":"_W.Onboarding.RPC","model_namespace":"_W.On
 
 	
 	<div id="homepage">
-		<div class="js-masthead home-masthead home-masthead-dual-cta masthead masthead--expandable home-masthead--fully-animated">
-<!-- Shared landing page SVG's -->
-
-		
-		
-			<div  class="js-masthead-content masthead__content-dual-cta">
-				<div class="js-masthead-container masthead__container masthead__container-dual-cta landing-page-container" >
-					<div class="masthead__center">
-							<svg class="home-masthead__tagline home-masthead__tagline-dual-cta" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 1041 259" style="enable-background:new 0 0 1041 259;" xml:space="preserve">
-								<style type="text/css">
-									.st0{fill:none;stroke:#FFFFFF;stroke-width:21;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-									.st1{fill:none;stroke:#FFFFFF;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-									.st2{fill:none;stroke:#FFFFFF;stroke-width:23;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-									.st3{fill:none;stroke:#FFFFFF;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-									.st4{fill:none;stroke:#FFFFFF;stroke-width:26;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-									.st5{fill:none;stroke:#FFFFFF;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-									.st6{fill:none;stroke:#FFFFFF;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-									.st7{fill:#FFFFFF;}
-								</style>
-							
-								<mask id="dwyl_mask">
-									<path id="D_1_" class="home-masthead__tagline-path home-masthead__tagline-path--d st0" d="M49.1,50.1c13,24,3,105,3,105s20-116,50-111s-2,142-46,142c-8,0-10-10-10-10" style="stroke-dashoffset: 417.735; stroke-dasharray: 417.735;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--o st0" d="M165.1,108.1c-17,0-9-34,13-34c25,0,14,82.9-19,80c-45-4-23-106,16-106" style="stroke-dashoffset: 290.069; stroke-dasharray: 290.069;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--w st0" d="M232.1,75.1c2,11,0,88,0,88s31-85,34-85s5.5,83.6,15,90c-3-21,32-109,55-126" style="stroke-dashoffset: 411.578; stroke-dasharray: 411.578;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--h st0" d="M346.1,65.1c2,11-15,95-15,95l55-102l-14,114l-70-48l80-12" style="stroke-dashoffset: 492.818; stroke-dasharray: 492.818;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--a st1" d="M391.1,155.1c0-13,22-93,22-93l19,95l-35-23c0,0,39-31,44-35" style="stroke-dashoffset: 290.631; stroke-dasharray: 290.631;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--t st2" d="M426.1,62.1l112-13l-52-17c0,0-43,109-33,144" style="stroke-dashoffset: 316.604; stroke-dasharray: 316.604;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--y st3" d="M526.1,76.1c-5,8-24,80,0,80s50-84,50-84s-29,120-10,139" style="stroke-dashoffset: 330.187; stroke-dasharray: 330.187;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--o2 st0" d="M606.1,72.1c-9,13-19,64,15,64c28,0,36.2-69.9,8.2-81c-25.2-10-27.2,72,4.8,62c28.9-9,18-40,18-40" style="stroke-dashoffset: 315.928; stroke-dasharray: 315.928;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--u st4" d="M678.1,55.1c-4,10-16,95,5,95s62-64,22-107" style="stroke-dashoffset: 227.739; stroke-dasharray: 227.739;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--line st5" d="M585.1,169.1c11-2,113-17,135-8s-58,11-80,37" style="stroke-dashoffset: 232.859; stroke-dasharray: 232.859;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--l st3" d="M780.1,41.1c4,10-28,151-28,151s42-38,83-36" style="stroke-dashoffset: 246.285; stroke-dasharray: 246.285;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--o3 st0" d="M846.1,102.1c-17,0-8-35,14-35c25,0,20,80-12,88c-32.7,8.2-44-76-14-98" style="stroke-dashoffset: 277.927; stroke-dasharray: 277.927;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--v st3" d="M885.1,64.1c11,17,20.7,76.9,27,86c17-74,36-123,58-126" style="stroke-dashoffset: 233.645; stroke-dasharray: 233.645;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--e st6" d="M972.1,56.1c-0.3-2.6-13.9,94.1-15,99" style="stroke-dashoffset: 100.249; stroke-dasharray: 100.249;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--e1 st6" d="M962.1,57.1c0,0,44.3-7.1,52-5" style="stroke-dashoffset: 52.3644; stroke-dasharray: 52.3644;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--e2 st6" d="M963.1,116.1c0,0,30.6-17.6,33-18" style="stroke-dashoffset: 37.6097; stroke-dasharray: 37.6097;"></path>
-									<path class="home-masthead__tagline-path home-masthead__tagline-path--e3 st6" d="M948.1,158.1c6.9,0.7,40.3-14.1,67-25" style="stroke-dashoffset: 71.6894; stroke-dasharray: 71.6894;"></path>
-								</mask>
-							
-			
-							</svg>
-		
-		
-						<div class="masthead__card-set">
-							<div class="masthead__card-container">
-							
-							</div>
-						
-						</div>
-		
-					</div>
-				</div><!-- .masthead__container -->
-		
-				<div class="home-masthead__overlay"></div>
-				<div class="js-masthead-overlay home-masthead__darken-overlay" data-fader data-fader-enter="0" data-fader-leave="2"></div>
-				<div class="home-masthead__video-overlay"></div>
-			</div><!-- .masthead__content -->
-		
-			<div class="masthead__video-container">
-				<video id="video" class="js-unveil js-masthead-video masthead__video" autoplay loop muted data-poster="//cdn2.editmysite.com/images/landing-pages/global/home-weebly4/v2/masthead/poster.jpg" data-src="//cdn2.editmysite.com/videos/landing-pages/global/home-weebly4/v2/masthead/masthead.mp4"></video>
-			</div>
-		
-		</div><!-- .home-masthead .masthead .masthead--expandable -->
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+	
 	<!-- this were the stupied code is at fix it  -->
 		<div class="js-fadeScroll">
 			<section class="home-themes home-section landing-page-section">
